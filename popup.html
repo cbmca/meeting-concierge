@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 280px;
+      padding: 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      color: #1a1a1a;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 16px;
+    }
+
+    .auth-section {
+      margin-bottom: 16px;
+      padding: 10px;
+      border-radius: 6px;
+      background: #f8f9fa;
+      border: 1px solid #e8eaed;
+    }
+
+    .auth-status {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .auth-status .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .dot.connected { background: #34a853; }
+    .dot.disconnected { background: #ccc; }
+
+    #connectBtn {
+      width: 100%;
+      padding: 7px 0;
+      background: #fff;
+      color: #4285f4;
+      border: 1px solid #4285f4;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    #connectBtn:hover { background: #f0f5ff; }
+    #connectBtn.hidden { display: none; }
+
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 6px;
+    }
+
+    .input-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    input[type="number"] {
+      width: 64px;
+      padding: 6px 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: inherit;
+      text-align: center;
+      outline: none;
+    }
+
+    input[type="number"]:focus {
+      border-color: #4285f4;
+      box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.15);
+    }
+
+    .unit {
+      font-size: 13px;
+      color: #555;
+    }
+
+    button#save {
+      width: 100%;
+      padding: 8px 0;
+      background: #4285f4;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    button#save:hover { background: #3574e0; }
+    button#save:active { background: #2a63c7; }
+
+    .status {
+      text-align: center;
+      font-size: 12px;
+      color: #34a853;
+      margin-top: 10px;
+      min-height: 16px;
+    }
+
+    .status.error { color: #d93025; }
+  </style>
+</head>
+<body>
+  <h1>Meeting Concierge</h1>
+  <p class="subtitle">Auto-open meeting tabs before they start.</p>
+
+  <div class="auth-section">
+    <div class="auth-status">
+      <span class="dot disconnected" id="authDot"></span>
+      <span id="authLabel">Checking...</span>
+    </div>
+    <button id="connectBtn" class="hidden">Connect Google Calendar</button>
+  </div>
+
+  <label for="leadTime">Open tab this many minutes early</label>
+  <div class="input-row">
+    <input type="number" id="leadTime" min="0" max="30" value="2">
+    <span class="unit">minutes</span>
+  </div>
+
+  <button id="save">Save</button>
+  <p class="status" id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

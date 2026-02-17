@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Meeting Concierge</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+    .updated { font-size: 13px; color: #666; margin-bottom: 24px; }
+    h2 { font-size: 16px; font-weight: 600; margin: 24px 0 8px; }
+    p, li { font-size: 14px; margin-bottom: 12px; }
+    ul { margin-left: 20px; margin-bottom: 12px; }
+    a { color: #4285f4; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 13px; color: #4285f4; text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">&larr; Back</a>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: February 17, 2026</p>
+
+  <h2>1. Overview</h2>
+  <p>Meeting Concierge ("the Extension") is a Chrome extension that reads your Google Calendar to automatically open tabs for upcoming meetings. This Privacy Policy explains what data the Extension accesses and how it is handled.</p>
+
+  <h2>2. Data We Access</h2>
+  <p>The Extension accesses the following data through Google's API:</p>
+  <ul>
+    <li><strong>Calendar events</strong> — specifically event titles, start times, and video conferencing / location links for upcoming events in your primary calendar.</li>
+  </ul>
+  <p>The Extension also stores the following in Chrome's local storage:</p>
+  <ul>
+    <li>Your preferred lead-time setting (minutes before a meeting to open tabs).</li>
+    <li>IDs of meetings that have already been opened, to prevent duplicate tabs.</li>
+  </ul>
+
+  <h2>3. Data We Do NOT Collect</h2>
+  <ul>
+    <li>We do <strong>not</strong> transmit your calendar data to any external server.</li>
+    <li>We do <strong>not</strong> use analytics, tracking, or telemetry of any kind.</li>
+    <li>We do <strong>not</strong> store your Google credentials — authentication is handled entirely by Chrome's built-in identity API and Google's OAuth flow.</li>
+    <li>We do <strong>not</strong> share any data with third parties.</li>
+  </ul>
+
+  <h2>4. How Data Is Processed</h2>
+  <p>All calendar data is fetched and processed locally within your browser. The Extension queries the Google Calendar API directly from Chrome, checks for upcoming meetings with video links, and opens tabs as needed. No data leaves your browser.</p>
+
+  <h2>5. Data Retention</h2>
+  <p>Calendar event data is held in memory only while the Extension checks for upcoming meetings and is not persisted. The only persisted data is your lead-time preference and a set of already-opened meeting IDs, both stored in Chrome's local storage. Uninstalling the Extension removes all stored data.</p>
+
+  <h2>6. Permissions Used</h2>
+  <ul>
+    <li><strong>identity</strong> — to authenticate with your Google account via OAuth.</li>
+    <li><strong>storage</strong> — to save your preferences in Chrome's local storage.</li>
+    <li><strong>alarms</strong> — to periodically check for upcoming meetings.</li>
+    <li><strong>tabs</strong> — to open new browser tabs for meetings.</li>
+    <li><strong>Google Calendar API (read-only)</strong> — to fetch your upcoming calendar events.</li>
+  </ul>
+
+  <h2>7. Revoking Access</h2>
+  <p>You can revoke the Extension's access to your Google Calendar at any time by visiting your <a href="https://myaccount.google.com/permissions">Google Account permissions</a> page, or by uninstalling the Extension.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Changes will be reflected in the "Last updated" date above.</p>
+
+  <h2>9. Contact</h2>
+  <p>For questions about this Privacy Policy, please open an issue on the project's GitHub repository.</p>
+</body>
+</html>
