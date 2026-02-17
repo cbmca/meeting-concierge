@@ -3,7 +3,7 @@
   "name": "Meeting Concierge",
   "version": "1.0.0",
   "description": "Auto-opens browser tabs for your upcoming Google Calendar meetings before they start.",
-  "homepage_url": "https://christophermcandrew.github.io/meeting-concierge/",
+  "homepage_url": "https://cbmca.github.io/meeting-concierge/",
   "permissions": [
     "identity",
     "storage",

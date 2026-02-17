@@ -10,9 +10,9 @@ Your OAuth consent screen is currently in "Testing" mode, which limits usage to 
 2. Select the project used for Meeting Concierge
 3. Click **"Publish App"** to move from Testing to Production
 4. Add the **Privacy Policy URL** to the consent screen:
-   - `https://christophermcandrew.github.io/meeting-concierge/privacy.html`
+   - `https://cbmca.github.io/meeting-concierge/privacy.html`
 5. Add the **Homepage URL**:
-   - `https://christophermcandrew.github.io/meeting-concierge/`
+   - `https://cbmca.github.io/meeting-concierge/`
 
 ### Google Verification (Required)
 
@@ -45,7 +45,7 @@ The `docs/` directory contains the landing page, Terms of Service, and Privacy P
 3. Under "Source," select **Deploy from a branch**
 4. Select the branch (e.g., `main`) and folder (`/docs`)
 5. Click **Save**
-6. Your site will be live at `https://christophermcandrew.github.io/meeting-concierge/`
+6. Your site will be live at `https://cbmca.github.io/meeting-concierge/`
 
 ---
 
@@ -89,7 +89,7 @@ This creates a ZIP containing only the extension files (manifest.json, backgroun
 | **Language** | English |
 | **Icon** | Upload `icons/icon128.png` |
 | **Screenshots** | At least 1 screenshot (1280x800 or 640x400) — capture the popup in action |
-| **Privacy policy URL** | `https://christophermcandrew.github.io/meeting-concierge/privacy.html` |
+| **Privacy policy URL** | `https://cbmca.github.io/meeting-concierge/privacy.html` |
 
 ### Screenshots Tips
 
