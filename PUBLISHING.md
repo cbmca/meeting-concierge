@@ -1,4 +1,4 @@
-# Publishing Guide — Meeting Concierge
+# Publishing Guide — Always Early
 
 ## 1. Google OAuth — Move to Production
 
@@ -7,7 +7,7 @@ Your OAuth consent screen is currently in "Testing" mode, which limits usage to 
 ### Steps
 
 1. Go to [Google Cloud Console — OAuth consent screen](https://console.cloud.google.com/apis/credentials/consent)
-2. Select the project used for Meeting Concierge
+2. Select the project used for Always Early
 3. Click **"Publish App"** to move from Testing to Production
 4. Add the **Privacy Policy URL** to the consent screen:
    - `https://cbmca.github.io/meeting-concierge/privacy.html`
@@ -16,7 +16,7 @@ Your OAuth consent screen is currently in "Testing" mode, which limits usage to 
 
 ### Google Verification (Required)
 
-Since Meeting Concierge uses `calendar.readonly` (a **restricted scope**), Google requires verification before your app can be used by anyone:
+Since Always Early uses `calendar.readonly` (a **restricted scope**), Google requires verification before your app can be used by anyone:
 
 - After clicking "Publish App," Google will prompt you to submit for verification
 - You will need to provide:
@@ -82,7 +82,7 @@ This creates a ZIP containing only the extension files (manifest.json, backgroun
 
 | Field | Value |
 |---|---|
-| **Name** | Meeting Concierge |
+| **Name** | Always Early |
 | **Short description** | Auto-opens browser tabs for your upcoming Google Calendar meetings before they start. |
 | **Detailed description** | See `store/description.txt` |
 | **Category** | Productivity |

@@ -1,13 +1,13 @@
-Meeting Concierge — Never be late to a meeting again.
+Always Early — Never be late to a meeting again.
 
-Meeting Concierge automatically opens browser tabs for your upcoming Google Calendar meetings a few minutes before they start. No more scrambling to find the meeting link — it's already open and waiting.
+Always Early automatically opens browser tabs for your upcoming Google Calendar meetings a few minutes before they start. No more scrambling to find the meeting link — it's already open and waiting.
 
 HOW IT WORKS
 1. Connect your Google Calendar with one click.
 2. Set how many minutes early you'd like tabs opened (default: 2 minutes).
-3. That's it! Meeting Concierge runs quietly in the background.
+3. That's it! Always Early runs quietly in the background.
 
-When a meeting with a video conferencing link (Google Meet, Zoom, Teams, etc.) is about to start, Meeting Concierge automatically opens the tab for you.
+When a meeting with a video conferencing link (Google Meet, Zoom, Teams, etc.) is about to start, Always Early automatically opens the tab for you.
 
 FEATURES
 - One-click Google Calendar integration

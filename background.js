@@ -1,4 +1,4 @@
-// Meeting Concierge — Background Service Worker
+// Always Early — Background Service Worker
 // Syncs Google Calendar events and opens meeting tabs at the right time.
 
 const SYNC_ALARM = "meeting-concierge-sync";
@@ -46,7 +46,7 @@ async function syncCalendar() {
   try {
     token = await getAuthToken(false);
   } catch (err) {
-    console.warn("Meeting Concierge: auth failed, skipping sync.", err);
+    console.warn("Always Early: auth failed, skipping sync.", err);
     return;
   }
 
@@ -90,7 +90,7 @@ async function syncCalendar() {
       data = await resp.json();
     }
   } catch (err) {
-    console.error("Meeting Concierge: fetch failed.", err);
+    console.error("Always Early: fetch failed.", err);
     return;
   }
 
@@ -142,7 +142,7 @@ async function handleMeetingAlarm(alarmName) {
   chrome.storage.session.remove(alarmName);
 
   if (!meetingUrl) {
-    console.warn("Meeting Concierge: no URL stored for alarm", alarmName);
+    console.warn("Always Early: no URL stored for alarm", alarmName);
     return;
   }
 

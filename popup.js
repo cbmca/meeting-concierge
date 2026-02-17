@@ -1,4 +1,4 @@
-// Meeting Concierge — Popup
+// Always Early — Popup
 
 const leadTimeInput = document.getElementById("leadTime");
 const saveButton = document.getElementById("save");

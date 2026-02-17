@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Meeting Concierge",
+  "name": "Always Early",
   "version": "1.0.0",
   "description": "Auto-opens browser tabs for your upcoming Google Calendar meetings before they start.",
   "homepage_url": "https://cbmca.github.io/meeting-concierge/",
@@ -21,7 +21,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Meeting Concierge"
+    "default_title": "Always Early"
   },
   "icons": {
     "16": "icons/icon16.png",

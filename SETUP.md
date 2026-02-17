@@ -1,4 +1,4 @@
-# Meeting Concierge — Setup & Testing
+# Always Early — Setup & Testing
 
 ## 1. Create a Google Cloud OAuth Client ID
 
@@ -23,7 +23,7 @@
 
 ## 3. Authorize
 
-1. Click the Meeting Concierge icon in the toolbar.
+1. Click the Always Early icon in the toolbar.
 2. The first calendar sync will trigger an OAuth consent screen — allow calendar read access.
 3. Set your preferred lead time and click **Save**.
 
@@ -51,5 +51,5 @@ The extension requests `calendar.readonly` — it can only read events, never mo
 ## 7. Troubleshooting
 
 - **"OAuth2 not granted or revoked"**: Re-check that the client ID in `manifest.json` matches the one in Google Cloud Console, and that the extension ID is registered as an authorized origin.
-- **No alarms firing**: Open `chrome://extensions/`, click "service worker" under Meeting Concierge to open DevTools, and check the console for errors.
+- **No alarms firing**: Open `chrome://extensions/`, click "service worker" under Always Early to open DevTools, and check the console for errors.
 - **Token expiration**: The service worker automatically handles 401 responses by clearing the cached token and re-authenticating silently.
