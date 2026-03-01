@@ -73,3 +73,15 @@ zip -r ~/always-early-<version>-<date>.zip . \
   --exclude "*.md" \
   --exclude "__MACOSX"
 ```
+
+---
+
+## Secrets & Credential Safety
+
+**Zero-tolerance: no API keys, tokens, passwords, or credentials may ever be committed to git.**
+
+- OAuth `client_id` in `manifest.json` is public by design (Chrome extensions use implicit flow) — this is fine
+- OAuth `client_secret` must NEVER be committed — Chrome extensions should not have one
+- Never hardcode tokens; all auth tokens come from `chrome.identity.getAuthToken()` at runtime
+- Before committing, scan `git diff --cached` for secret patterns: API keys, Bearer tokens, private keys
+- If a secret is accidentally committed: rotate the key immediately, then scrub history with `git-filter-repo` or BFG Repo-Cleaner
